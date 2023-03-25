@@ -4,51 +4,90 @@ using System.Collections.Generic;
 
 namespace SoluMoto.Datos
 {
+    /// <summary>
+    /// Clase que implementa la interfaz ProductoInterface y gestiona la persistencia de los productos.
+    /// </summary>
     public class ProductoDatos : ProductoInterface
     {
         private List<Producto> productos = new List<Producto>();
 
+        /// <summary>
+        /// Actualiza un producto existente.
+        /// </summary>
+        /// <param name="producto">Producto a actualizar.</param>
+        /// <returns>Verdadero si la actualización se realizó con éxito, falso en caso contrario.</returns>
         public bool Actualizar(Producto producto)
         {
-            throw new NotImplementedException();
-        }
-
-        public bool Crear(Producto producto)
-        {
-            //Si el usuario pasado por parametro es nulo o vacío, retorna falso
-            if(producto == null) { return false; }
-            
-            //Si todo está bien, entonces agrega el producto a la lista de productos
-            productos.Add(producto);
-
-            //Y retorna un true
-            return true;
-        }
-
-        public bool Eliminar(Producto producto)
-        {
-            //Si el usuario pasado por parametro es nulo o vacío, retorna falso
+            //Si el producto pasado por parámetro es nulo, retorna falso
             if (producto == null) { return false; }
 
-            //Recorremos la lista de usuarios
+            //Recorre la lista de productos
             foreach (var item in productos)
             {
-                //Si el id del producto que queremos eliminar, es igual a uno de los productos dentro de la lista, entonces lo elimina.
-                if(item.IdProducto == producto.IdProducto)
+                //Si el id del producto coincide con uno de los productos en la lista, actualiza su información
+                if (item.IdProducto == producto.IdProducto)
                 {
-                    //Elimina el producto
-                    productos.Remove(producto);
+                    item.Nombre = producto.Nombre;
+                    // Aquí podrías actualizar más atributos si fuese necesario
                 }
             }
 
-            //Y retorna un true, SI TODO SALE BIEN
+            //Retorna verdadero si la actualización se realizó con éxito
             return true;
         }
 
+        /// <summary>
+        /// Crea un nuevo producto.
+        /// </summary>
+        /// <param name="producto">Producto a crear.</param>
+        /// <returns>Verdadero si la creación se realizó con éxito, falso en caso contrario.</returns>
+        public bool Crear(Producto producto)
+        {
+            //Si el producto pasado por parámetro es nulo, retorna falso
+            if (producto == null) { return false; }
+
+            //Agrega el nuevo producto a la lista de productos
+            productos.Add(producto);
+
+            //Retorna verdadero si la creación se realizó con éxito
+            return true;
+        }
+
+        /// <summary>
+        /// Elimina un producto existente.
+        /// </summary>
+        /// <param name="producto">Producto a eliminar.</param>
+        /// <returns>Verdadero si la eliminación se realizó con éxito, falso en caso contrario.</returns>
+        public bool Eliminar(Producto producto)
+        {
+            //Si el producto pasado por parámetro es nulo, retorna falso
+            if (producto == null) { return false; }
+
+            //Recorre la lista de productos
+            foreach (var item in productos)
+            {
+                //Si el id del producto coincide con uno de los productos en la lista, lo elimina
+                if (item.IdProducto == producto.IdProducto)
+                {
+                    productos.Remove(producto);
+                    // Si no haces break, podrías eliminar más productos con el mismo Id
+                    break;
+                }
+            }
+
+            //Retorna verdadero si la eliminación se realizó con éxito
+            return true;
+        }
+
+        /// <summary>
+        /// Obtiene una lista de todos los productos.
+        /// </summary>
+        /// <returns>Lista de productos.</returns>
         public List<Producto> Listar()
         {
             //Retorna la lista de productos
             return productos;
         }
     }
+
 }
