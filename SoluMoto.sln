@@ -3,9 +3,32 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Datos", "Datos", "{BA27FFEF-A486-4333-A799-A6E76664F689}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entidad", "Entidad", "{41824B16-E90E-4CDA-A531-AC63162CC711}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentacion", "Presentacion", "{70A931DF-CBCB-42F6-96EB-AD8E58BD729D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logica", "Logica", "{D2B22A87-E7E1-4F0A-BE67-85634946C6FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoluMoto.Entidad", "SoluMoto.Entidad\SoluMoto.Entidad.csproj", "{2F4817A8-9411-40FB-A60E-1B216012F02A}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F4817A8-9411-40FB-A60E-1B216012F02A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F4817A8-9411-40FB-A60E-1B216012F02A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F4817A8-9411-40FB-A60E-1B216012F02A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F4817A8-9411-40FB-A60E-1B216012F02A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2F4817A8-9411-40FB-A60E-1B216012F02A} = {41824B16-E90E-4CDA-A531-AC63162CC711}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {126DA9D4-525F-42F5-B80C-2C50069A449C}
