@@ -41,7 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClienteInterface.cs" />
+    <Compile Include="MecanicoInterface.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProductoDatos.cs" />
+    <Compile Include="ProductoInterface.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SoluMoto.Entidad\SoluMoto.Entidad.csproj">
