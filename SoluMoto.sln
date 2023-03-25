@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoluMoto.Entidad", "SoluMot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoluMoto.Logica", "SoluMoto.Logica\SoluMoto.Logica.csproj", "{268610BD-DDB4-4939-ABAA-B584BEEB2008}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoluMoto.Presentacion.Consola", "SoluMoto.Presentacion.Consola\SoluMoto.Presentacion.Consola.csproj", "{44BC7CE7-F5A9-4FE7-BBEE-25AA341FEB0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{268610BD-DDB4-4939-ABAA-B584BEEB2008}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{268610BD-DDB4-4939-ABAA-B584BEEB2008}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{268610BD-DDB4-4939-ABAA-B584BEEB2008}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44BC7CE7-F5A9-4FE7-BBEE-25AA341FEB0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44BC7CE7-F5A9-4FE7-BBEE-25AA341FEB0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44BC7CE7-F5A9-4FE7-BBEE-25AA341FEB0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44BC7CE7-F5A9-4FE7-BBEE-25AA341FEB0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{2F4817A8-9411-40FB-A60E-1B216012F02A} = {41824B16-E90E-4CDA-A531-AC63162CC711}
 		{268610BD-DDB4-4939-ABAA-B584BEEB2008} = {D2B22A87-E7E1-4F0A-BE67-85634946C6FB}
+		{44BC7CE7-F5A9-4FE7-BBEE-25AA341FEB0A} = {70A931DF-CBCB-42F6-96EB-AD8E58BD729D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {126DA9D4-525F-42F5-B80C-2C50069A449C}
