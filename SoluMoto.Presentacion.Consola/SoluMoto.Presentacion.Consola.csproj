@@ -49,5 +49,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SoluMoto.Entidad\SoluMoto.Entidad.csproj">
+      <Project>{2f4817a8-9411-40fb-a60e-1b216012f02a}</Project>
+      <Name>SoluMoto.Entidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SoluMoto.Logica\SoluMoto.Logica.csproj">
+      <Project>{268610bd-ddb4-4939-abaa-b584beeb2008}</Project>
+      <Name>SoluMoto.Logica</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

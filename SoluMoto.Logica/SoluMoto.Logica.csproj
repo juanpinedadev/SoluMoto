@@ -43,5 +43,15 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SoluMoto.Datos\SoluMoto.Datos.csproj">
+      <Project>{78194fec-eefc-4a9d-827f-ca4b4d377c76}</Project>
+      <Name>SoluMoto.Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SoluMoto.Entidad\SoluMoto.Entidad.csproj">
+      <Project>{2f4817a8-9411-40fb-a60e-1b216012f02a}</Project>
+      <Name>SoluMoto.Entidad</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
