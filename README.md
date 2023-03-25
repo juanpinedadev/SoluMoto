@@ -11,9 +11,9 @@ SoluMoto es un sistema de ventas de repuestos y servicios de reparación de moto
 
 ## Tecnologías utilizadas 🛠️
 
-- Laravel 8.x
-- Bootstrap 5
-- MySQL
+- C#
+- .NET Framework
+- Batabase: SQL Server
 
 ## Instalación y configuración 🔧
 
